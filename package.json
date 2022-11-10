@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite build && vite preview"
+  },
+  "dependencies": {
+    "react": "18.x.x",
+    "react-dom": "18.x.x",
+    "vite-plugin-ssr": "^0.4.48"
+  },
+  "peerDependencies": {
+    "react": "18.x.x",
+    "react-dom": "18.x.x",
+    "vite-plugin-ssr": "^0.4.48"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "vite-plugin-ssr": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/node-fetch": "^2.5.12",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "@vitejs/plugin-react": "^2.2.0",
+    "cross-fetch": "^3.1.5",
+    "node-fetch": "^2.6.1",
+    "vite": "^3.2.3",
+    "typescript": "4.9.1-beta"
+  }
+}
