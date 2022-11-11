@@ -1,6 +1,10 @@
 {
+  "exports": {
+    "./vite-plugin-ssr.config": "./vite-plugin-ssr.config.js"
+  },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "rm -rf dist/ && tsc"
   },
   "dependencies": {
     "react": "18.x.x",
