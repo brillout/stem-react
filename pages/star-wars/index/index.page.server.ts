@@ -6,7 +6,6 @@ export { onBeforeRender }
 export { prerender }
 
 async function onBeforeRender() {
-  await sleep(300) // Simulate slow network
   const movies = await getStarWarsMovies()
   return {
     pageContext: {
