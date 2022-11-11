@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "vite --config ./vite.config.dev.ts"
+    "dev": "vite"
   },
   "dependencies": {
     "react": "18.x.x",
