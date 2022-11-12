@@ -6,6 +6,10 @@
     "./renderer/_default.page.client": "./dist/renderer/renderer/_default.page.client",
     "./renderer/_default.page.server": "./dist/renderer/renderer/_default.page.server"
   },
+  "files": [
+    "dist/",
+    "renderer/"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist/ && tsc",
