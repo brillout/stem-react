@@ -1,8 +1,8 @@
 export default {
   pageFiles: {
-    includeDist: [
-      require.resolve('../dist/renderer/_default.page.server.js'),
-      require.resolve('../dist/renderer/_default.page.client.js')
+    addPageFiles: [
+      'stem-react/renderer/_default.page.server.js',
+      'stem-react/renderer/_default.page.client.js'
     ]
   }
 }
