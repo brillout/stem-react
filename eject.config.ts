@@ -3,11 +3,13 @@ export default {
   root: __dirname,
   ejectables: [
     {
-      src: '/renderer',
-      importModifications: [{
-        importPathOld: 'stem-react',
-        importPathNew: '/renderer'
-      }]
+      src: './renderer/',
+      importModifications: [
+        {
+          importPathOld: 'stem-react',
+          importPathNew: '$appRoot/renderer'
+        }
+      ]
     }
   ]
 }
