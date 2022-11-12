@@ -1,6 +1,6 @@
 {
   "name": "stem-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "exports": {
     "./vite-plugin-ssr.config": "./dist/vite-plugin-ssr.config.js",
     "./renderer/_default.page.client": "./dist/renderer/renderer/_default.page.client",
