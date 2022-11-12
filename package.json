@@ -1,10 +1,11 @@
 {
   "name": "stem-react",
   "version": "0.0.2",
+  "type": "module",
   "exports": {
-    "./vite-plugin-ssr.config": "./dist/vite-plugin-ssr.config.js",
-    "./renderer/_default.page.client": "./dist/renderer/renderer/_default.page.client",
-    "./renderer/_default.page.server": "./dist/renderer/renderer/_default.page.server"
+    "./vite-plugin-ssr.config": "./dist/vite-plugin-ssr.config.mjs",
+    "./renderer/_default.page.client": "./dist/renderer/_default.page.client.mjs",
+    "./renderer/_default.page.server": "./dist/renderer/_default.page.server.mjs"
   },
   "files": [
     "dist/",
