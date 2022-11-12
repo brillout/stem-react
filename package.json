@@ -1,4 +1,6 @@
 {
+  "name": "stem-react",
+  "version": "0.0.0",
   "exports": {
     "./vite-plugin-ssr.config": "./dist/vite-plugin-ssr.config.js",
     "./renderer/_default.page.client": "./dist/renderer/renderer/_default.page.client",
@@ -6,7 +8,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist/ && tsc"
+    "build": "rm -rf dist/ && tsc",
+    "// === Release ===": "",
+    "prepublishOnly": "pnpm run build",
+    "release": "npm version patch && npm publish && git push && git push --tags"
   },
   "dependencies": {
     "react": "18.x.x",
