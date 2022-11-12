@@ -3,9 +3,11 @@
   "type": "module",
   "version": "0.0.3",
   "exports": {
+    ".": "./dist/renderer/index.js",
     "./vite-plugin-ssr.config.js": "./dist/vite-plugin-ssr.config.js",
     "./renderer/_default.page.client.js": "./dist/renderer/_default.page.client.js",
-    "./renderer/_default.page.server.js": "./dist/renderer/_default.page.server.js"
+    "./renderer/_default.page.server.js": "./dist/renderer/_default.page.server.js",
+    "./eject.config.js": "./dist/eject.config.js"
   },
   "files": [
     "dist/",
