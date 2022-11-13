@@ -1,7 +1,7 @@
 {
-  "name": "stem-react",
-  "type": "module",
+  "name": "@brillout/stem-react",
   "version": "0.0.4",
+  "type": "module",
   "exports": {
     ".": "./dist/renderer/index.js",
     "./vite-plugin-ssr.config.js": "./dist/vite-plugin-ssr.config.js",
@@ -52,5 +52,10 @@
     "tsup": "^6.4.0",
     "typescript": "4.9.1-beta",
     "vite": "^3.2.3"
+  },
+  "repository": "github:brillout/stem-react",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
   }
 }
