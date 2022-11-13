@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@brillout/eject': ^0.0.1
   '@types/node': ^17.0.31
   '@types/node-fetch': ^2.5.12
   '@types/react': ^18.0.8
@@ -16,6 +17,7 @@ specifiers:
   vite-plugin-ssr: ^0.4.48
 
 dependencies:
+  '@brillout/eject': 0.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   vite-plugin-ssr: link:../../../../code/vite-plugin-ssr/vite-plugin-ssr
@@ -300,6 +302,11 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: true
+
+  /@brillout/eject/0.0.1:
+    resolution: {integrity: sha512-T+LJTGUvAMa2kgdQiHpGjw18YX4Yw7RzznmnFkxj46XpcnCemTqiigDYjRwqb/3eLBrfu9YARWXZ9MaBI+E+Yg==}
+    hasBin: true
+    dev: false
 
   /@esbuild/android-arm/0.15.13:
     resolution: {integrity: sha512-RY2fVI8O0iFUNvZirXaQ1vMvK0xhCcl0gqRj74Z6yEiO1zAUa7hbsdwZM1kzqbxHK7LFyMizipfXT3JME+12Hw==}
