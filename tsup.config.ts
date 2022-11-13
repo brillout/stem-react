@@ -5,7 +5,8 @@ export default defineConfig({
     './renderer/_default.page.client.ts',
     './renderer/_default.page.server.ts',
     './renderer/index.ts',
-    './vite-plugin-ssr.config.ts'
+    './vite-plugin-ssr.config.ts',
+    './eject.config.ts'
   ],
   format: 'esm',
   clean: true,
