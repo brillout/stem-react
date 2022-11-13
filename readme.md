@@ -1,3 +1,1 @@
-# Stem React
-
-React renderer for [vite-plugin-ssr](https://vite-plugin-ssr.com/).
+# Package moved to [@brillout/stem-react](https://www.npmjs.com/package/@brillout/stem-react)
