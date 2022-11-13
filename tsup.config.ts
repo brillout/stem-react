@@ -8,5 +8,7 @@ export default defineConfig({
     './vite-plugin-ssr.config.ts'
   ],
   format: 'esm',
-  clean: true
+  clean: true,
+  sourcemap: true,
+  dts: true
 })
