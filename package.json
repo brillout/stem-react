@@ -23,7 +23,7 @@
     "release": "npm version patch && npm publish && git push && git push --tags"
   },
   "dependencies": {
-    "@brillout/eject": "^0.0.1",
+    "@brillout/eject": "^0.0.2",
     "react": "18.x.x",
     "react-dom": "18.x.x",
     "vite-plugin-ssr": "^0.4.48"
