@@ -1,13 +1,15 @@
 export default {
-  name: 'stem-react',
-  root: __dirname,
   ejectables: [
     {
-      src: './renderer/',
-      importModifications: [
+      actions: [
         {
-          importPathOld: 'stem-react',
-          importPathNew: '$appRoot/renderer'
+          moveSourceCode: './renderer/'
+        },
+        {
+          modifyImportPaths: {
+            importPathOld: '@brillout/stem-react',
+            importPathNew: './renderer'
+          }
         }
       ]
     }
