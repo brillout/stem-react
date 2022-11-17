@@ -26,12 +26,12 @@
     "@brillout/eject": "^0.1.0",
     "react": "18.x.x",
     "react-dom": "18.x.x",
-    "vite-plugin-ssr": "^0.4.48"
+    "vite-plugin-ssr": "^0.4.49"
   },
   "peerDependencies": {
     "react": "18.x.x",
     "react-dom": "18.x.x",
-    "vite-plugin-ssr": "^0.4.48"
+    "vite-plugin-ssr": "^0.4.49"
   },
   "peerDependenciesMeta": {
     "vite": {

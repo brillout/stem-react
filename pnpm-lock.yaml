@@ -14,13 +14,13 @@ specifiers:
   tsup: ^6.4.0
   typescript: 4.9.1-beta
   vite: ^3.2.3
-  vite-plugin-ssr: ^0.4.48
+  vite-plugin-ssr: ^0.4.49
 
 dependencies:
   '@brillout/eject': 0.1.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  vite-plugin-ssr: 0.4.48_vite@3.2.3
+  vite-plugin-ssr: 0.4.49_vite@3.2.3
 
 devDependencies:
   '@types/node': 17.0.45
@@ -2387,8 +2387,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: false
 
-  /vite-plugin-ssr/0.4.48_vite@3.2.3:
-    resolution: {integrity: sha512-xCh/Z9ra9DhuPvvdbB6pvhmf7v1R35nhg8CyxorBUeQJ5bHzEREaChViaHGU7kzdDqrjX3qzbaCoqTQVTawb2A==}
+  /vite-plugin-ssr/0.4.49_vite@3.2.3:
+    resolution: {integrity: sha512-CkxT9HVcMRJ74EsuYryff+2BwUlc8tA8pIKH/o/k0PWO7WQNK2xObXKdUd2cYyhlCsqDmUXlTdInsW1ADLGwMg==}
     engines: {node: '>=12.19.0'}
     hasBin: true
     peerDependencies:
@@ -2398,6 +2398,7 @@ packages:
       react-streaming:
         optional: true
     dependencies:
+      '@brillout/import': 0.1.3
       '@brillout/json-serializer': 0.5.3
       '@brillout/vite-plugin-import-build': 0.1.0
       cac: 6.7.14
