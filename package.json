@@ -1,6 +1,6 @@
 {
   "name": "@brillout/stem-react",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "types": "./dist/renderer/index.d.ts",
   "exports": {
