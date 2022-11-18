@@ -2,10 +2,9 @@ export { PageContextProvider }
 export { usePageContext }
 
 import React, { useContext } from 'react'
+import { PageContext } from './types'
 
-type PageContext = Record<string, unknown>
-
-const Context = React.createContext<PageContext>(undefined as any) // TODO
+const Context = React.createContext<PageContext>(undefined as never)
 
 function PageContextProvider({ pageContext, children }: { pageContext: PageContext; children: React.ReactNode }) {
   if (!pageContext) throw new Error('Argument `pageContext` is missing')

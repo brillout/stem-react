@@ -1,24 +1,29 @@
-// TODO: remove this file by implementing VPS TS namespace overrriding
-
 export type { PageContextServer }
 export type { PageContextClient }
 export type { PageContext }
 export type { PageProps }
-export type { Component }
+export type { Page }
 
 import type { PageContextBuiltIn } from 'vite-plugin-ssr'
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router'
 
-type Component = (pageProps: PageProps) => React.ReactElement
-type Page = Component
+type Page = (pageProps: PageProps) => React.ReactElement
 type PageProps = Record<string, unknown>
+type WrapperComponent = ({ children }: { children: any }) => React.ReactElement
 
-export type PageContextCustom = {
+export type PageContextCommon = {
   Page: Page
   pageProps?: PageProps
+  exports: {
+    Layout?: WrapperComponent
+  }
 }
 
-type PageContextServer = PageContextBuiltIn<Page> & PageContextCustom
-type PageContextClient = PageContextBuiltInClient<Page> & PageContextCustom
-
+type PageContextServer = PageContextBuiltIn<Page> &
+  PageContextCommon & {
+    exports: {
+      Head?: () => React.ReactElement
+    }
+  }
+type PageContextClient = PageContextBuiltInClient<Page> & PageContextCommon
 type PageContext = PageContextClient | PageContextServer

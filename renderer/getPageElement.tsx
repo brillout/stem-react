@@ -1,17 +1,11 @@
 export { getPageElement }
 
-import { getLayout } from './getLayout'
-import type { Component } from './types'
+import type { PageContext } from './types'
 import React from 'react'
 import { PageContextProvider } from './usePageContext'
 
-function getPageElement(pageContext: {
-  Page: Component
-  pageProps?: Record<string, unknown>
-  exports: Record<string, unknown>
-  exportsAll: Record<string, undefined | { filePath: string }[]>
-}): JSX.Element {
-  const Layout = getLayout(pageContext)
+function getPageElement(pageContext: PageContext): JSX.Element {
+  const Layout = pageContext.exports.Layout ?? PassThrough
   const { Page, pageProps } = pageContext
   const page = (
     <React.StrictMode>
@@ -23,4 +17,8 @@ function getPageElement(pageContext: {
     </React.StrictMode>
   )
   return page
+}
+
+function PassThrough({ children }: any) {
+  return <>{children}</>
 }

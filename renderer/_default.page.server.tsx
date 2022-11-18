@@ -6,7 +6,8 @@ import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
 import { getTitle } from './getTitle'
 import { getPageElement } from './getPageElement'
 import type { PageContextServer } from './types'
-import { getHead } from './getHead'
+import { PageContextProvider } from './usePageContext'
+import React from 'react'
 
 const passToClient = ['pageProps', 'title']
 
@@ -17,7 +18,14 @@ async function render(pageContext: PageContextServer) {
   const title = getTitle(pageContext)
   const titleTag = title === null ? '' : escapeInject`<title>${title}</title>`
 
-  const head = getHead(pageContext)
+  const Head = pageContext.exports.Head || (() => <></>)
+  const head = (
+    <React.StrictMode>
+      <PageContextProvider pageContext={pageContext}>
+        <Head />
+      </PageContextProvider>
+    </React.StrictMode>
+  )
   const headHtml = renderToString(head)
 
   const documentHtml = escapeInject`<!DOCTYPE html>
