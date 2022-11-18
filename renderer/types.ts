@@ -16,6 +16,7 @@ export type PageContextCommon = {
   pageProps?: PageProps
   exports: {
     Layout?: WrapperComponent
+    Wrapper?: WrapperComponent
   }
 }
 
