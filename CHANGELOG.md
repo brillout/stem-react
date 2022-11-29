@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/brillout/stem-react/compare/v0.1.1...v0.1.2) (2022-11-29)
+
+
+### Bug Fixes
+
+* support next VPS version ([5c9a052](https://github.com/brillout/stem-react/commit/5c9a052858f2e300e99d5005d15d51c823f15c6e))
+
+
+
 ## [0.1.1](https://github.com/brillout/stem-react/compare/v0.1.0...v0.1.1) (2022-11-18)
 
 
