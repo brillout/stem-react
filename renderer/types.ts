@@ -4,8 +4,10 @@ export type { PageContext }
 export type { PageProps }
 export type { Page }
 
-import type { PageContextBuiltIn } from 'vite-plugin-ssr'
-import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client/router'
+import type {
+  PageContextBuiltInServer,
+  PageContextBuiltInClientWithClientRouting as PageContextBuiltInClient
+} from 'vike/types'
 
 type Page = (pageProps: PageProps) => React.ReactElement
 type PageProps = Record<string, unknown>
@@ -20,7 +22,7 @@ export type PageContextCommon = {
   }
 }
 
-type PageContextServer = PageContextBuiltIn<Page> &
+type PageContextServer = PageContextBuiltInServer<Page> &
   PageContextCommon & {
     exports: {
       Head?: () => React.ReactElement

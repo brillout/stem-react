@@ -5,7 +5,7 @@ import { isCallable } from './utils/isCallable'
 function getTitle(pageContext: {
   title?: unknown
   exports: Record<string, unknown>
-  exportsAll: Record<string, undefined | { filePath: string }[]>
+  exportsAll: Record<string, undefined | { filePath: null | string }[]>
 }): null | string {
   if (typeof pageContext.title === 'string') {
     return pageContext.title

@@ -5,7 +5,7 @@ export default defineConfig({
     './renderer/_default.page.client.tsx',
     './renderer/_default.page.server.tsx',
     './renderer/index.ts',
-    './vite-plugin-ssr.config.ts',
+    './vike.config.ts',
     './eject.config.ts'
   ],
   format: 'esm',

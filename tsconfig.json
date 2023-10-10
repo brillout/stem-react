@@ -11,5 +11,5 @@
     "esModuleInterop": true,
     "outDir": "./dist"
   },
-  "files": ["./renderer/_default.page.server.tsx", "./renderer/_default.page.client.tsx", "./vite-plugin-ssr.config.ts"]
+  "files": ["./renderer/_default.page.server.tsx", "./renderer/_default.page.client.tsx", "./vike.config.ts"]
 }
