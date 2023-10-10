@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/brillout/stem-react/compare/v0.1.3...v0.2.0) (2023-10-10)
+
+
+### Bug Fixes
+
+* vite-plugin-ssr -> vike ([f4debbb](https://github.com/brillout/stem-react/commit/f4debbb99b150f4291060f9d7c40d1e3800a3978))
+
+
+
 ## [0.1.3](https://github.com/brillout/stem-react/compare/v0.1.2...v0.1.3) (2022-12-03)
 
 ### Bug Fixes
